@@ -16,7 +16,8 @@ namespace code_red_dk
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                namespaces: new [] { "code_red_dk.Controllers" }
             );
         }
     }
