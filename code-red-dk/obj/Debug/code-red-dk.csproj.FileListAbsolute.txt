@@ -64,6 +64,6 @@ C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Owin.Security.OAuth.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Owin.Security.Google.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Owin.Security.Twitter.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.csprojResolveAssemblyReference.cache
 C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.dll
 C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.pdb
+C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.csprojResolveAssemblyReference.cache

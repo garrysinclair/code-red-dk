@@ -29,5 +29,9 @@ namespace code_red_dk.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<code_red_dk.Models.Review> Reviews { get; set; }
+
+        public System.Data.Entity.DbSet<code_red_dk.Models.Album> Albums { get; set; }
     }
 }
