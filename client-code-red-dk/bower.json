@@ -1,0 +1,8 @@
+﻿{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.2.3",
+    "mustache": "~2.3.0"
+  }
+}
