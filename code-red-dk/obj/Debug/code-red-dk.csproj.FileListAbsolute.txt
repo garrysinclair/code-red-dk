@@ -73,3 +73,16 @@ C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.WebHost.dll
 C:\GitRoot\code-red-dk\code-red-dk\bin\System.Net.Http.Formatting.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.WebHost.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\ApplicationInsights.config
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.Agent.Intercept.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.DependencyCollector.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.Web.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.WindowsServer.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.ApplicationInsights.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.DependencyCollector.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.Web.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.WindowsServer.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.ApplicationInsights.xml
