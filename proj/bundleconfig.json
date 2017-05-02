@@ -1,0 +1,17 @@
+[
+  {
+    "inputFiles": [
+      "dist/Common/Variables.js",
+      "dist/Data/DataService.js",
+      "dist/Log/LogService.js",
+      "dist/main.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "commentMode": "all",
+      "renameLocals": "false"
+    },
+    "outputFileName": "bundle.js",
+    "sourceMap": true
+  }
+]

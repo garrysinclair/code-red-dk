@@ -1,10 +1,14 @@
 {
     "files": [
-        "src/main.ts",
-        "src/greet.ts"
+        "src/Common/Variables.ts",
+        "src/Data/DataService.ts",
+        "src/Log/LogService.ts",
+        "src/main.ts"
     ],
     "compilerOptions": {
         "noImplicitAny": true,
-        "target": "es5"
+        "sourceMap": true,
+        "target": "es5",
+        "module": "none"
     }
 }

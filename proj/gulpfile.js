@@ -1,76 +1,47 @@
-var gulp = require('gulp');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
-var tsify = require('tsify');
-var sourcemaps = require('gulp-sourcemaps');
-var buffer = require('vinyl-buffer');
-var paths = {
-    pages: ['src/*.html']
-};
+/// <binding BeforeBuild='compile' AfterBuild='copyToWebParts' />
+var gulp = require("gulp");
 var ts = require("gulp-typescript");
+var del = require('del');
+var merge = require('merge2');
 var tsProject = ts.createProject("tsconfig.json");
+var bundleconfig = require("./bundleconfig.json");
+var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
+var gutil = require('gulp-util');
 
-//var jquery = require('jquery');
+// https://github.com/ivogabe/gulp-typescript#source-maps 
+// .pipe(sourcemaps.init()) // This means sourcemaps will be generated 
+// .pipe(sourcemaps.write()) // Now the sourcemaps are added to the .js file 
 
-gulp.task('copyHtml', function () {
-    return gulp.src(paths.pages)
-        .pipe(gulp.dest('dist'));
+function getBundles(extension) {
+    return bundleconfig.filter(function (bundle) {
+        return new RegExp(`${extension}$`).test(bundle.outputFileName);
+    });
+}
+
+gulp.task('clean', function () {
+    del.sync(['dist']);
 });
 
-gulp.task('default', ['copyHtml'], function () {
-    return browserify({
-        basedir: '.',
-        debug: true,
-        entries: ['src/main.ts'],
-        cache: {},
-        packageCache: {}
-    })
-    .plugin(tsify)
-    .transform('babelify', {
-        presets: ['es2015'],
-        extensions: ['.ts']
-    })
-    .bundle()
-    .pipe(source('bundle.js'))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('dist'));
+gulp.task("compile", ['clean'], function () {
+    return tsResult = tsProject.src()
+            .pipe(tsProject())
+            .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('cr', function(){
-    return tsProject.src()
-        .pipe(tsProject())
-        .js.pipe(gulp.dest("dist"));
+gulp.task("default", ["max:js"]);
+
+gulp.task("max:js", ['compile'], function () {
+    var tasks = getBundles(".js").map(function (bundle) {
+        return gulp.src(bundle.inputFiles, { base: "./dist" })
+            .pipe(concat(bundle.outputFileName.replace(".min", "")))
+            .pipe(gutil.noop())
+            .pipe(gulp.dest("./dist"))
+            .pipe(gulp.dest("../code-red-dk/scripts"));
+    });
+    return merge(tasks);
 });
 
-gulp.task("cr2", function () {
-    return browserify({
-        basedir: '.',
-        debug: true,
-        entries: ['src/main.ts'],
-        cache: {},
-        packageCache: {}
-    })
-    .plugin(tsify)
-    .bundle()
-    .pipe(source('bundle.js'))
-    .pipe(gulp.dest("../code-red-dk/scripts"));
-});
-
-gulp.task("cr3", function () {
-    return browserify({
-        basedir: './src',
-        debug: true,
-        entries: [
-            "Common/Variables.ts",
-            "Data/DataService.ts"
-            ],
-        cache: {},
-        packageCache: {}
-    })
-    .plugin(tsify)
-    .bundle()
-    .pipe(source('bundle.js'))
-    .pipe(gulp.dest("../code-red-dk/scripts"));
+gulp.task('watch', ['default'], function () {
+    gulp.watch('src/**/*.ts', ['default']);
 });

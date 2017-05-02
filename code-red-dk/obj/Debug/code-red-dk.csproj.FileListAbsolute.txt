@@ -66,3 +66,10 @@ C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Owin.Security.Twitter.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.dll
 C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.pdb
+C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.csprojResolveAssemblyReference.cache
+C:\GitRoot\code-red-dk\code-red-dk\bin\System.Net.Http.Formatting.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.WebHost.dll
+C:\GitRoot\code-red-dk\code-red-dk\bin\System.Net.Http.Formatting.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.xml
+C:\GitRoot\code-red-dk\code-red-dk\bin\System.Web.Http.WebHost.xml
