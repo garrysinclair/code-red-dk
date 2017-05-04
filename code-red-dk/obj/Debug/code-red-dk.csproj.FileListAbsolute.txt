@@ -86,3 +86,6 @@ C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.Web.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.WindowsServer.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.ApplicationInsights.xml
+C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code_red_dk.Migrations.InitialCreate.resources
+C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.csproj.GenerateResource.Cache
+C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code_red_dk.Migrations.DOB.resources

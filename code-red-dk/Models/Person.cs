@@ -10,5 +10,8 @@ namespace code_red_dk.Models
         public int PersonID { get; set; }
 
         public string Name { get; set; }
+
+
+        public DateTime DateOfBirth { get; set; }
     }
 }
