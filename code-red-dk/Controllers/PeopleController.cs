@@ -32,6 +32,7 @@ namespace code_red_dk.Controllers
             {
                 return HttpNotFound();
             }
+            StoreQueueContext.AddToQueue(id);
             return View(person);
         }
 
