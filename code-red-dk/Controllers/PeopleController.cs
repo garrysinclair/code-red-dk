@@ -10,11 +10,14 @@ using code_red_dk.Models;
 
 namespace code_red_dk.Controllers
 {
+    [Authorize]
     public class PeopleController : Controller
     {
-        private StoreDbContext db = new StoreDbContext();
+        //private StoreDbContext db = new StoreDbContext();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: People
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(db.People.ToList());

@@ -88,7 +88,6 @@ C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.AI.WindowsServer.xml
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.ApplicationInsights.xml
 C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code_red_dk.Migrations.InitialCreate.resources
 C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code-red-dk.csproj.GenerateResource.Cache
-C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code_red_dk.Migrations.DOB.resources
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Azure.KeyVault.Core.dll
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Data.Edm.dll
 C:\GitRoot\code-red-dk\code-red-dk\bin\Microsoft.Data.OData.dll
@@ -138,3 +137,4 @@ C:\GitRoot\code-red-dk\code-red-dk\bin\ko\System.Spatial.resources.dll
 C:\GitRoot\code-red-dk\code-red-dk\bin\ru\System.Spatial.resources.dll
 C:\GitRoot\code-red-dk\code-red-dk\bin\zh-Hans\System.Spatial.resources.dll
 C:\GitRoot\code-red-dk\code-red-dk\bin\zh-Hant\System.Spatial.resources.dll
+C:\GitRoot\code-red-dk\code-red-dk\obj\Debug\code_red_dk.Migrations.CR2.resources

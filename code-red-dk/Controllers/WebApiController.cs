@@ -9,7 +9,8 @@ namespace code_red_dk.Controllers
 {
     public class WebApiController : ApiController
     {
-        private StoreDbContext db = new StoreDbContext();
+        //private StoreDbContext db = new StoreDbContext();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         //public TestController() { }
 

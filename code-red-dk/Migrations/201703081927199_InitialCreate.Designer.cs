@@ -13,7 +13,7 @@ namespace code_red_dk.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201705020744100_InitialCreate"; }
+            get { return "201703081927199_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

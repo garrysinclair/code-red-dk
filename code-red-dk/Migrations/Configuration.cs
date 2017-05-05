@@ -5,15 +5,15 @@ namespace code_red_dk.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<code_red_dk.Models.StoreDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<code_red_dk.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "code_red_dk.Models.StoreDbContext";
+            ContextKey = "code_red_dk.Models.ApplicationDbContext";
         }
 
-        protected override void Seed(code_red_dk.Models.StoreDbContext context)
+        protected override void Seed(code_red_dk.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

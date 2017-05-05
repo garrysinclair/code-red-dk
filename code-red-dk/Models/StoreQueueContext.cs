@@ -15,7 +15,7 @@ namespace code_red_dk.Models
         {
             var connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
-            
+
             // Create the queue client.
             CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
 

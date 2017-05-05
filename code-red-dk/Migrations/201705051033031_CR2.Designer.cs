@@ -7,13 +7,13 @@ namespace code_red_dk.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class DOB : IMigrationMetadata
+    public sealed partial class CR2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DOB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CR2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201705041045240_DOB"; }
+            get { return "201705051033031_CR2"; }
         }
         
         string IMigrationMetadata.Source
